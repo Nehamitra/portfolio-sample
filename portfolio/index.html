@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, p, a, form, input, textarea, button, img {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background and font styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Colorful background */
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #444;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1e90ff;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .about, .contact, .portfolio {
+            padding: 20px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #444;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact form input, .contact form textarea {
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background: #333;
+            color: #fff;
+        }
+
+        .contact form button {
+            padding: 15px;
+            background: #1e90ff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .contact form button:hover {
+            background: #4682b4;
+        }
+
+        .portfolio {
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            margin-bottom: 20px;
+        }
+
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .portfolio-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            width: 200px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#portfolio">My Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Neha, a Web Designer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and Bootstrap.</p>
+    </section>
+
+    <section id="portfolio" class="container portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-gallery">
+            <img src="img1.jfif" alt="Project 1">
+            <img src="img2.jfif" alt="Project 2">
+            <img src="img3.jfif" alt="Project 3">
+            <img src="img4.jfif" alt="Project 4">
+            <img src="img5.jfif" alt="Project 5">
+        </div>
+    </section>
+
+    <section id="contact" class="container contact">
+        <h2>Contact Me</h2>
+        <p>Email-<a href="mailto:nehamitra0701.com"> nehamitra0701@gmail.com</a></p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+       
+    </section>
+    <footer>
+        <p>\\2024 My Portfolio.\\ All rights reserved.</p>
+    </footer>
+</body>
+</html>
